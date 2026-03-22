@@ -1,0 +1,26 @@
+rosbag2_bagfile_information:
+  version: 5
+  storage_identifier: mcap
+  duration:
+    nanoseconds: 0
+  starting_time:
+    nanoseconds_since_epoch: 1
+  message_count: 1
+  topics_with_message_count:
+    - topic_metadata:
+        name: chatter
+        type: anavs_int_stamped_msgs/msg/Int64StampedUnknown
+        serialization_format: cdr
+        offered_qos_profiles: ""
+      message_count: 1
+  compression_format: ""
+  compression_mode: ""
+  relative_file_paths:
+    - bag_with_unknown_msgs_0.mcap
+  files:
+    - path: bag_with_unknown_msgs_0.mcap
+      starting_time:
+        nanoseconds_since_epoch: 1
+      duration:
+        nanoseconds: 0
+      message_count: 1
