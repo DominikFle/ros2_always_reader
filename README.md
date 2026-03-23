@@ -7,7 +7,10 @@ Read ROS2 bag files with a tiny, generator-based API. Works with MCAP and sqlite
 - Read all bag segments in a folder (db3 or MCAP).
 - Keep reading even when the installed ROS2 message definition is newer than the one recorded in the bag by coercing MCAP messages using the stored schema.
 - Drop messages for unknown types with a single flag.
+##Installation
+Use rosdep to install pcakage.xml deps.
 
+Additionally install `mcap` and `mcap-ros2-support` using e.g. `pip`.
 ## Usage
 
 ```python
@@ -19,7 +22,6 @@ for bag_msg in read_bag(
 ):
     print(bag_msg.topic, bag_msg.writer_timestamp, type(bag_msg.msg))
 ```
-
 ### Coercion for newer message definitions (MCAP only)
 
 If a MCAP bag was recorded with an older message definition, deserialization can fail. This package can fall back to the schema embedded in the bag and coerce the message into the currently installed ROS2 type.
