@@ -9,7 +9,7 @@ Read ROS2 bag files with a tiny, generator-based API. Works with MCAP and sqlite
 - Drop messages for unknown types with a single flag.
 
 ## Installation
-Use rosdep to install pcakage.xml deps.
+Use rosdep to install package.xml deps.
 
 Additionally install `mcap` and `mcap-ros2-support` using e.g. `pip`.
 
